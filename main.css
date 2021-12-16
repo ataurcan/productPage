@@ -9,9 +9,23 @@ body .container {
   margin-right: 10%;
   background-color: white;
 }
+@media (max-width: 767px) {
+  body .container {
+    display: inline-block;
+    height: 1000px;
+    justify-items: center;
+    align-items: center 5px;
+  }
+}
 body .container .images {
   justify-items: center;
   width: 40%;
+}
+@media (max-width: 767px) {
+  body .container .images {
+    width: 100%;
+    display: inline-block;
+  }
 }
 body .container .images .bigImage {
   width: 80%;
@@ -24,15 +38,20 @@ body .container .images .bigImage img {
 body .container .images .smallImages {
   justify-items: start;
 }
+@media (max-width: 767px) {
+  body .container .images .smallImages {
+    display: none;
+  }
+}
 body .container .images .smallImages ul {
   display: flex;
   justify-content: space-between;
   margin-right: 10%;
 }
-body .container .images .smallImages ul li {
-  border: 1px solid black;
+body .container .images .smallImages li {
+  border: 1px solid grey;
 }
-body .container .images .smallImages ul li .foto {
+body .container .images .smallImages li .foto {
   width: 100px;
 }
 body .container .productInfo {
@@ -40,6 +59,8 @@ body .container .productInfo {
   margin-top: 5%;
   display: grid;
   justify-items: start;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 body .container .productInfo .baslik-container h1 {
   font-size: 32px;
