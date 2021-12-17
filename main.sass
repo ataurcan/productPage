@@ -1,4 +1,4 @@
-$background-color:#FAEBD7
+$background-color:#EEE
 $container-color:white
 @mixin margin-generator($margin-left,$margin-right)
    margin-left: $margin-left
@@ -15,6 +15,9 @@ body
     .container
         display: flex
         height: auto
+        position: relative
+        margin: auto
+        border-radius: 8px
         @include margin-generator(10%,10%)
         background-color: $container-color
         @media (max-width: 767px)
@@ -30,10 +33,13 @@ body
                 width: 100%
                 display: inline-block
             .bigImage
-                width: 80%
+                margin: 10px
+                padding: 10%
+                @include border-generator(1px,grey,solid)
                 
                 img
-                   @include margin-generator(5%,5%)
+                   @include margin-generator(auto,auto)
+
                    width: 100%
 
 
@@ -106,15 +112,19 @@ body
                 @include margin-generator(5%,5%)
                 
                 width: auto
-                height: 130px
+                height: auto
                 background-color:#DCDCDC
                 margin: auto
+                .aciklama-header
+                    font-size: 20px
+                    font-weight: bold
             .buton
                 width: 250px    
                 height: 50px    
                 border-radius:20px
                 color: blue
-               
+                @media (max-width: 767px)
+                    margin-top: 40px
                
                 &:hover
                     color: white

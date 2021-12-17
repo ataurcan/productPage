@@ -1,10 +1,13 @@
 @charset "UTF-8";
 body {
-  background-color: #FAEBD7;
+  background-color: #EEE;
 }
 body .container {
   display: flex;
   height: auto;
+  position: relative;
+  margin: auto;
+  border-radius: 8px;
   margin-left: 10%;
   margin-right: 10%;
   background-color: white;
@@ -28,11 +31,15 @@ body .container .images {
   }
 }
 body .container .images .bigImage {
-  width: 80%;
+  margin: 10px;
+  padding: 10%;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
 }
 body .container .images .bigImage img {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 body .container .images .smallImages {
@@ -98,15 +105,24 @@ body .container .productInfo .aciklama {
   margin-left: 5%;
   margin-right: 5%;
   width: auto;
-  height: 130px;
+  height: auto;
   background-color: #DCDCDC;
   margin: auto;
+}
+body .container .productInfo .aciklama .aciklama-header {
+  font-size: 20px;
+  font-weight: bold;
 }
 body .container .productInfo .buton {
   width: 250px;
   height: 50px;
   border-radius: 20px;
   color: blue;
+}
+@media (max-width: 767px) {
+  body .container .productInfo .buton {
+    margin-top: 40px;
+  }
 }
 body .container .productInfo .buton:hover {
   color: white;
