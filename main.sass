@@ -89,7 +89,8 @@ body
                 display: grid
                 background-color: #F4F4F4
                 @include margin-generator(0,5%)
-                
+                @media (max-width: 767px)
+                    margin-top: 10px
 
                 .fiyat
                     
@@ -115,6 +116,8 @@ body
                 height: auto
                 background-color:#DCDCDC
                 margin: auto
+                @media (max-width: 767px)
+                    margin-top: 10px
                 .aciklama-header
                     font-size: 20px
                     font-weight: bold
@@ -124,7 +127,7 @@ body
                 border-radius:20px
                 color: blue
                 @media (max-width: 767px)
-                    margin-top: 40px
+                    margin-top: 30px
                
                 &:hover
                     color: white

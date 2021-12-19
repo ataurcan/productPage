@@ -85,6 +85,11 @@ body .container .productInfo .fiyat-container {
   margin-left: 0;
   margin-right: 5%;
 }
+@media (max-width: 767px) {
+  body .container .productInfo .fiyat-container {
+    margin-top: 10px;
+  }
+}
 body .container .productInfo .fiyat-container .fiyat {
   font-size: 30px;
   font-weight: bold;
@@ -109,6 +114,11 @@ body .container .productInfo .aciklama {
   background-color: #DCDCDC;
   margin: auto;
 }
+@media (max-width: 767px) {
+  body .container .productInfo .aciklama {
+    margin-top: 10px;
+  }
+}
 body .container .productInfo .aciklama .aciklama-header {
   font-size: 20px;
   font-weight: bold;
@@ -121,7 +131,7 @@ body .container .productInfo .buton {
 }
 @media (max-width: 767px) {
   body .container .productInfo .buton {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 body .container .productInfo .buton:hover {
